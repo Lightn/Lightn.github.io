@@ -1,0 +1,21 @@
+{
+    "title": "Donna's Neighborhood",
+    "autoLoad": true,
+    "compass": true,
+    "northOffset": 88.0,
+    "hfov": 100.0,
+    "vaov": 95.0,
+    "vOffset": 0.0,
+    "minPitch": -90.0,
+    "pitch": 0.0,
+    "maxPitch": 5.0,
+    "type": "multires",
+    "multiRes": {
+        "path": "/%l/%s%y_%x",
+        "fallbackPath": "/fallback/%s",
+        "extension": "jpg",
+        "tileResolution": 512,
+        "maxLevel": 4,
+        "cubeResolution": 4016
+    }
+}

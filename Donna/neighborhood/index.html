@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donna's Neighborhood</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <style>
+    #panorama {
+        width: available;
+        height: 800px;
+    }
+    </style>
+</head>
+<body>
+
+<div id="panorama"></div>
+<script>
+pannellum.viewer('panorama', {
+    "title": "Donna's Neighborhood",
+    "autoLoad": true,
+    "compass": true,
+    "northOffset": 88.0,
+    "hfov": 100.0,
+    "vaov": 95.0,
+    "vOffset": 0.0,
+    "minPitch": -90.0,
+    "pitch": 0.0,
+    "maxPitch": 5.0,
+    "type": "multires",
+    "multiRes": {
+        "path": "%l/%s%y_%x",
+        "fallbackPath": "fallback/%s",
+        "extension": "jpg",
+        "tileResolution": 512,
+        "maxLevel": 4,
+        "cubeResolution": 4016
+    }
+});
+</script>
+
+</body>
+</html>
